@@ -13,31 +13,31 @@
 <body>
     
     <main>
-        <form class="formulario" id="formulario">
+        <form method="POST" class="formulario" id="formulario">
 
             <div class="formulario__grupo">
                 <label for="nombre" class="formulario__label">Nombre</label>
-                <input type="text" id="nombre" name="nombre" class="formulario__input">
+                <input type="text" id="nombre" name="nombre" class="formulario__input" required>
             </div>
             
             <div class="formulario__grupo">
                 <label for="apellidos" class="formulario__label">Apellidos</label>
-                <input type="text" class="formulario__input" id="apellidos" name="apellidos">
+                <input type="text" class="formulario__input" id="apellidos" name="apellidos" required>
             </div>
 
             <div class="formulario__grupo">
                 <label for="rut" class="formulario__label">Rut</label>
-                <input type="text" class="formulario__input" id="rut" name="rut">
+                <input type="text" class="formulario__input" id="rut" name="rut" required>
             </div>
 
             <div class="formulario__grupo">
                 <label for="email" class="formulario__label">Email</label>
-                <input type="email" class="formulario__input" id="email" name="email">
+                <input type="email" class="formulario__input" id="email" name="email" required>
             </div>
 
             <div class="formulario__grupo">
                 <label for="telefono" class="formulario__label">Número de telefono</label>
-                <input type="number" class="formulario__input" id="telefono" name="telefono">
+                <input type="number" class="formulario__input" id="telefono" name="telefono" required>
             </div>
 
             <div class="formulario__grupo">
@@ -45,32 +45,32 @@
 
                 <div class="formulario__grupo-checkbox">
                     <label for="lenguaje-python" class="formulario__label-checkbox">Python</label>
-                    <input type="checkbox" class="formulario__input-checkbox" id="lenguaje-python" name="lenguaje-python" value="lenguajes">
+                    <input type="checkbox" class="formulario__input-checkbox" id="python" name="lenguajes" value="python">
                 </div>
                 
                 <div class="formulario__grupo-checkbox">
                     <label for="lenguaje-java" class="formulario__label-checkbox">Java</label>
-                    <input type="checkbox" class="formulario__input-checkbox" id="lenguaje-java" name="lenguaje-java" value="lenguajes">
+                    <input type="checkbox" class="formulario__input-checkbox" id="java" name="lenguajes" value="java">
                 </div>
 
                 <div class="formulario__grupo-checkbox">
                     <label for="lenguaje-typescript" class="formulario__label-checkbox">TypeScript</label>
-                    <input type="checkbox" class="formulario__input-checkbox" id="lenguaje-typescript" name="lenguaje-typsecript" value="lenguajes">
+                    <input type="checkbox" class="formulario__input-checkbox" id="typescript" name="lenguajes" value="typescript">
                 </div>
                 
                 <div class="formulario__grupo-checkbox">
                     <label for="lenguaje-php" class="formulario__label-checkbox">PHP</label>
-                    <input type="checkbox" class="formulario__input-checkbox" id="lenguaje-php" name="lenguaje-php" value="lenguajes">
+                    <input type="checkbox" class="formulario__input-checkbox" id="php" name="lenguajes" value="php">
                 </div>
 
                 <div class="formulario__grupo-checkbox">
                     <label for="lenguaje-c#" class="formulario__label-checkbox">C#</label>
-                    <input type="checkbox" class="formulario__input-checkbox" id="lenguaje-c#" name="lenguaje-c#" value="lenguajes">
+                    <input type="checkbox" class="formulario__input-checkbox" id="c#" name="lenguajes" value="c#">
                 </div>
 
                 <div class="formulario__grupo-checkbox">
                     <label for="lenguaje-c++" class="formulario__label-checkbox">C++</label>
-                    <input type="checkbox" class="formulario__input-checkbox" id="lenguaje-c++" name="lenguaje-c++" value="lenguajes">
+                    <input type="checkbox" class="formulario__input-checkbox" id="c++" name="lenguajes" value="c++">
                 </div>
                 
             </div>
@@ -85,7 +85,7 @@
                 <div class="formulario__grupo-radio">
                     <div class="formulario__grupo-radio-valor">
                         <label for="experiencia-1">1</label>
-                        <input type="radio" name="años-experiencia" id="experiencia-1" value="1">
+                        <input type="radio" name="años-experiencia" id="experiencia-1" value="1" required>
                     </div>
                     <div class="formulario__grupo-radio-valor">
                         <label for="experiencia-2">2</label>
@@ -108,11 +108,17 @@
             
             <div class="formulario__grupo">
                 <label for="textarea" class="formulario__label-titulo">Acerca de ti</label>
-                <textarea name="textarea" id="textarea" class="formulario__textarea"></textarea>
+                <textarea name="textarea" id="textarea" class="formulario__textarea" required></textarea>
             </div>
+
+            <div class="botones">
+                <button type="submit" class="boton" id="boton-enviar">Enviar</button>
+                <button class="boton" id="boton-reset">Limpiar datos</button>
+            </div>
+
         </form>
     </main>
 
-    <script src="index.js"></script>    
+    <script src="js/index.js"></script>    
 </body>
 </html>

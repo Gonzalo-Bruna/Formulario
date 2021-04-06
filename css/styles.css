@@ -51,7 +51,7 @@ main{
 }
 
 .formulario__input{
-    padding: 6px 0;
+    padding: 6px 4px;
 }
 
 .formulario__input-checkbox{
@@ -61,4 +61,28 @@ main{
 .formulario__textarea{
     resize: none;
     min-height: 70px;
+}
+
+.botones{
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton{
+    margin: 0 4px;
+    padding: 5px 12px;
+
+}
+
+/* Esconde las flechas del input tipo number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
