@@ -50,8 +50,21 @@ main{
     align-items: center;
 }
 
+.formulario__grupo-telefono{
+    display: flex;
+}
+
 .formulario__input{
     padding: 6px 4px;
+}
+
+#telefono{
+    width: 100%;
+}
+
+.formulario__input-telefono{
+    width: 30px;
+    margin-right: 10px;
 }
 
 .formulario__input-checkbox{
@@ -60,7 +73,7 @@ main{
 
 .formulario__textarea{
     resize: none;
-    min-height: 70px;
+    min-height: 85px;
 }
 
 .botones{
@@ -73,6 +86,13 @@ main{
     margin: 0 4px;
     padding: 5px 12px;
 
+}
+
+.mensaje-error{
+    color: red;
+    background-color: #fff;
+    padding: 10px 20px;
+    text-align:center;
 }
 
 /* Esconde las flechas del input tipo number */
