@@ -1,0 +1,64 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    background-color: #eee;
+}
+
+.formulario__grupo{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__grupo-radio{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulario__label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario__label-titulo{
+    display: block;
+    margin: 27px 0;
+    font-weight: 700;
+}
+
+.formulario__label-checkbox{
+    display: inline-block;
+    min-width: 75px;
+    padding: 4px 4%;
+}
+
+.formulario__label-radio{
+    cursor: pointer;
+}
+
+.formulario__grupo-radio-valor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__input{
+    padding: 6px 0;
+}
+
+.formulario__input-checkbox{
+    margin-left: 15px;
+}
+
+.formulario__textarea{
+    resize: none;
+    min-height: 70px;
+}

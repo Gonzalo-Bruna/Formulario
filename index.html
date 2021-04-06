@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <main>
+        <form class="formulario" id="formulario">
+
+            <div class="formulario__grupo">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="formulario__input">
+            </div>
+            
+            <div class="formulario__grupo">
+                <label for="apellidos" class="formulario__label">Apellidos</label>
+                <input type="text" class="formulario__input" id="apellidos" name="apellidos">
+            </div>
+
+            <div class="formulario__grupo">
+                <label for="rut" class="formulario__label">Rut</label>
+                <input type="text" class="formulario__input" id="rut" name="rut">
+            </div>
+
+            <div class="formulario__grupo">
+                <label for="email" class="formulario__label">Email</label>
+                <input type="email" class="formulario__input" id="email" name="email">
+            </div>
+
+            <div class="formulario__grupo">
+                <label for="telefono" class="formulario__label">Número de telefono</label>
+                <input type="number" class="formulario__input" id="telefono" name="telefono">
+            </div>
+
+            <div class="formulario__grupo">
+                <label class="formulario__label-titulo">Escoja los lenguajes de programación que domina</label>
+
+                <div class="formulario__grupo-checkbox">
+                    <label for="lenguaje-python" class="formulario__label-checkbox">Python</label>
+                    <input type="checkbox" class="formulario__input-checkbox" id="lenguaje-python" name="lenguaje-python" value="lenguajes">
+                </div>
+                
+                <div class="formulario__grupo-checkbox">
+                    <label for="lenguaje-java" class="formulario__label-checkbox">Java</label>
+                    <input type="checkbox" class="formulario__input-checkbox" id="lenguaje-java" name="lenguaje-java" value="lenguajes">
+                </div>
+
+                <div class="formulario__grupo-checkbox">
+                    <label for="lenguaje-typescript" class="formulario__label-checkbox">TypeScript</label>
+                    <input type="checkbox" class="formulario__input-checkbox" id="lenguaje-typescript" name="lenguaje-typsecript" value="lenguajes">
+                </div>
+                
+                <div class="formulario__grupo-checkbox">
+                    <label for="lenguaje-php" class="formulario__label-checkbox">PHP</label>
+                    <input type="checkbox" class="formulario__input-checkbox" id="lenguaje-php" name="lenguaje-php" value="lenguajes">
+                </div>
+
+                <div class="formulario__grupo-checkbox">
+                    <label for="lenguaje-c#" class="formulario__label-checkbox">C#</label>
+                    <input type="checkbox" class="formulario__input-checkbox" id="lenguaje-c#" name="lenguaje-c#" value="lenguajes">
+                </div>
+
+                <div class="formulario__grupo-checkbox">
+                    <label for="lenguaje-c++" class="formulario__label-checkbox">C++</label>
+                    <input type="checkbox" class="formulario__input-checkbox" id="lenguaje-c++" name="lenguaje-c++" value="lenguajes">
+                </div>
+                
+            </div>
+
+            <div class="formulario__grupo">
+                <label for="nivel-programacion" class="formulario__label-titulo">Seleccione su nivel en programación</label>
+                <input type="range" id="nivel-programacion" min="0" max="10" class="input-range">
+            </div>
+
+            <div class="formulario__grupo">
+                <label class="formulario__label-titulo">Años de experiencia</label>
+                <div class="formulario__grupo-radio">
+                    <div class="formulario__grupo-radio-valor">
+                        <label for="experiencia-1">1</label>
+                        <input type="radio" name="años-experiencia" id="experiencia-1" value="1">
+                    </div>
+                    <div class="formulario__grupo-radio-valor">
+                        <label for="experiencia-2">2</label>
+                        <input type="radio" name="años-experiencia" id="experiencia-2" value="2">
+                    </div>
+                    <div class="formulario__grupo-radio-valor">
+                        <label for="experiencia-3">3</label>
+                        <input type="radio" name="años-experiencia" id="experiencia-3" value="3">
+                    </div>
+                    <div class="formulario__grupo-radio-valor">
+                        <label for="experiencia-4">4</label>
+                        <input type="radio" name="años-experiencia" id="experiencia-4" value="4">
+                    </div> 
+                    <div class="formulario__grupo-radio-valor">
+                        <label for="experiencia-5+">5+</label>
+                        <input type="radio" name="años-experiencia" id="experiencia-5+" value="5">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="formulario__grupo">
+                <label for="textarea" class="formulario__label-titulo">Acerca de ti</label>
+                <textarea name="textarea" id="textarea" class="formulario__textarea"></textarea>
+            </div>
+        </form>
+    </main>
+
+    <script src="index.js"></script>    
+</body>
+</html>
