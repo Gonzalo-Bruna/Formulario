@@ -145,7 +145,7 @@ function limpiarPantalla(){
     formulario.style.display = "none";
     let mensajeH3 = document.createElement("h3");
     mensajeH3.innerHTML = "Hemos recibido sus datos, pronto nos estaremos comunicando con usted"
-    mensajeH3.style.fontSize = "35px";
+    mensajeH3.style.fontSize = "25px";
     mensajeH3.style.textAlign = "center"
     let mainDiv:any = document.getElementById("main");
     mainDiv.appendChild(mensajeH3);
